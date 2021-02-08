@@ -1,0 +1,17 @@
+﻿.body
+{
+    margin:0px;
+}
+.divlogo
+{
+    width:98.25%;
+    height:130px;
+    font-family:Verdana @Batang Tahoma;
+  
+    padding:20px 1px 20px 40px;    
+    margin:-10px;
+    background-image:url("../Gambar/banner2.jpg");
+    margin-bottom:40px;   
+    background-repeat:no-repeat;
+    margin-right :-200px;
+    }

@@ -1,0 +1,1763 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{098C2B08-2301-4411-9B59-1FE923396F24}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Create_Forum_Project</RootNamespace>
+    <AssemblyName>Create Forum Project</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="15SI.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="admin_teknologi.aspx" />
+    <Content Include="admin_politik.aspx" />
+    <Content Include="admin_edukasi.aspx" />
+    <Content Include="admin_game.aspx" />
+    <Content Include="admin_olahraga.aspx" />
+    <Content Include="Beranda_A17TI.aspx" />
+    <Content Include="BuatDiskusi_A17TI.aspx" />
+    <Content Include="Comment_14SI.aspx" />
+    <Content Include="Comment_14TI.aspx" />
+    <Content Include="Comment_16TM.aspx" />
+    <Content Include="Comment_17SI.aspx" />
+    <Content Include="Comment_17TI.aspx" />
+    <Content Include="Comment_18SI.aspx" />
+    <Content Include="Comment_18TI.aspx" />
+    <Content Include="Comment_19SI.aspx" />
+    <Content Include="Comment_19TI.aspx" />
+    <Content Include="Comment_20SI.aspx" />
+    <Content Include="Comment_20TI.aspx" />
+    <Content Include="Comment_AK.aspx" />
+    <Content Include="Comment_Faku17SI.aspx" />
+    <Content Include="Comment_Faku17TI.aspx" />
+    <Content Include="Comment_Faku18SI.aspx" />
+    <Content Include="Comment_Faku18TI.aspx" />
+    <Content Include="Comment_Faku19SI.aspx" />
+    <Content Include="Comment_Faku19TI.aspx" />
+    <Content Include="Comment_Faku20SI.aspx" />
+    <Content Include="Comment_Faku20TI.aspx" />
+    <Content Include="comment_g14.aspx" />
+    <Content Include="Comment_g14si.aspx" />
+    <Content Include="Comment_g14ti.aspx" />
+    <Content Include="Comment_g15ak.aspx" />
+    <Content Include="Comment_g15si.aspx" />
+    <Content Include="Comment_g15tet.aspx" />
+    <Content Include="Comment_g15ti.aspx" />
+    <Content Include="comment_g15tk.aspx" />
+    <Content Include="Comment_g15tt.aspx" />
+    <Content Include="Comment_g16tm.aspx" />
+    <Content Include="Comment_G17SI.aspx" />
+    <Content Include="Comment_G17TI.aspx" />
+    <Content Include="Comment_G18SI.aspx" />
+    <Content Include="Comment_G18TI.aspx" />
+    <Content Include="Comment_G19SI.aspx" />
+    <Content Include="Comment_G19TI.aspx" />
+    <Content Include="Comment_G20SI.aspx" />
+    <Content Include="Comment_G20TI.aspx" />
+    <Content Include="Comment_SI.aspx" />
+    <Content Include="Comment_TET.aspx" />
+    <Content Include="Comment_TI.aspx" />
+    <Content Include="Comment_TK.aspx" />
+    <Content Include="Comment_TT.aspx" />
+    <Content Include="Comment_Umum_14SI.aspx" />
+    <Content Include="Comment_Umum_14TI.aspx" />
+    <Content Include="Comment_Umum_15AK.aspx" />
+    <Content Include="Comment_Umum_15SI.aspx" />
+    <Content Include="Comment_Umum_15TET.aspx" />
+    <Content Include="Comment_Umum_15TI.aspx" />
+    <Content Include="Comment_Umum_15TK.aspx" />
+    <Content Include="Comment_Umum_15TT.aspx" />
+    <Content Include="Comment_Umum_16TM.aspx" />
+    <Content Include="CSS\dashboard.css" />
+    <Content Include="CSS\divlogo.css" />
+    <Content Include="CSS\forum.css" />
+    <Content Include="CSS\logincss.css" />
+    <Content Include="CSS\style.css" />
+    <Content Include="ct.aspx" />
+    <Content Include="Dashboard.aspx" />
+    <Content Include="Dashboard_14AK.aspx" />
+    <Content Include="Dashboard_14SI.aspx" />
+    <Content Include="Dashboard_14TI.aspx" />
+    <Content Include="Dashboard_14TM.aspx" />
+    <Content Include="Dashboard_15SI.aspx" />
+    <Content Include="Dashboard_15TE.aspx" />
+    <Content Include="Dashboard_15TI.aspx" />
+    <Content Include="Dashboard_17SI.aspx" />
+    <Content Include="Dashboard_17TI.aspx" />
+    <Content Include="Dashboard_18SI.aspx" />
+    <Content Include="Dashboard_18TI.aspx" />
+    <Content Include="Dashboard_19SI.aspx" />
+    <Content Include="Dashboard_19TI.aspx" />
+    <Content Include="Dashboard_20SI.aspx" />
+    <Content Include="Dashboard_20TI.aspx" />
+    <Content Include="Dashboard_Faku17SI.aspx" />
+    <Content Include="Dashboard_Faku17TI.aspx" />
+    <Content Include="Dashboard_Faku18SI.aspx" />
+    <Content Include="Dashboard_Faku18TI.aspx" />
+    <Content Include="Dashboard_Faku19SI.aspx" />
+    <Content Include="Dashboard_Faku19TI.aspx" />
+    <Content Include="Dashboard_Faku20SI.aspx" />
+    <Content Include="Dashboard_Faku20TI.aspx" />
+    <Content Include="Dashboard_G14.aspx" />
+    <Content Include="Dashboard_G14SI.aspx" />
+    <Content Include="Dashboard_G14TI.aspx" />
+    <Content Include="Dashboard_G15AK.aspx" />
+    <Content Include="Dashboard_G15TI.aspx" />
+    <Content Include="Dashboard_G15SI.aspx" />
+    <Content Include="Dashboard_G15TK.aspx" />
+    <Content Include="Dashboard_G17SI.aspx" />
+    <Content Include="Dashboard_G17TI.aspx" />
+    <Content Include="Dashboard_G18SI.aspx" />
+    <Content Include="Dashboard_G18TI.aspx" />
+    <Content Include="Dashboard_G19SI.aspx" />
+    <Content Include="Dashboard_G19TI.aspx" />
+    <Content Include="Dashboard_G20SI.aspx" />
+    <Content Include="Dashboard_G20TI.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Default_14SI.aspx" />
+    <Content Include="Default_14TI.aspx" />
+    <Content Include="Default_15AK.aspx" />
+    <Content Include="Default_15SI.aspx" />
+    <Content Include="Default_15TE.aspx" />
+    <Content Include="Default_15TET.aspx" />
+    <Content Include="Default_15TI.aspx" />
+    <Content Include="Default_15TK.aspx" />
+    <Content Include="Default_15TM.aspx" />
+    <Content Include="Default_15TT.aspx" />
+    <Content Include="Default_16TM.aspx" />
+    <Content Include="Default_17SI.aspx" />
+    <Content Include="Default_17TI.aspx" />
+    <Content Include="Default_18SI.aspx" />
+    <Content Include="Default_18TI.aspx" />
+    <Content Include="Default_19SI.aspx" />
+    <Content Include="Default_19TI.aspx" />
+    <Content Include="Default_20SI.aspx" />
+    <Content Include="Default_20TI.aspx" />
+    <Content Include="Default_Faku17SI.aspx" />
+    <Content Include="Default_Faku17TI.aspx" />
+    <Content Include="Default_Faku18SI.aspx" />
+    <Content Include="Default_Faku18TI.aspx" />
+    <Content Include="Default_Faku19SI.aspx" />
+    <Content Include="Default_Faku19TI.aspx" />
+    <Content Include="Default_Faku20SI.aspx" />
+    <Content Include="Default_Faku20TI.aspx" />
+    <Content Include="Default_G14SI.aspx" />
+    <Content Include="Default_G14TI.aspx" />
+    <Content Include="Default_G15AK.aspx" />
+    <Content Include="Default_G15TI.aspx" />
+    <Content Include="Default_G15SI.aspx" />
+    <Content Include="Default_G15TK.aspx" />
+    <Content Include="Default_G17SI.aspx" />
+    <Content Include="Default_G17TI.aspx" />
+    <Content Include="Default_G18SI.aspx" />
+    <Content Include="Default_G18TI.aspx" />
+    <Content Include="Default_G19SI.aspx" />
+    <Content Include="Default_G19TI.aspx" />
+    <Content Include="Default_G20SI.aspx" />
+    <Content Include="Default_G20TI.aspx" />
+    <Content Include="forumLogin.aspx" />
+    <Content Include="forumRegistration.aspx" />
+    <Content Include="G14SI.aspx" />
+    <Content Include="G14TI.aspx" />
+    <Content Include="G15.aspx" />
+    <Content Include="G15AK.aspx" />
+    <Content Include="G15SI.aspx" />
+    <Content Include="G15SI_KlasifikasiBeritaKehilangan.aspx" />
+    <Content Include="G15SI_KlasifikasiBisnis.aspx" />
+    <Content Include="G15SI_KlasifikasiEdukasi.aspx" />
+    <Content Include="G15SI_KlasifikasiKepanitiaan.aspx" />
+    <Content Include="G15SI_KlasifikasiOlahraga.aspx" />
+    <Content Include="G15TI.aspx" />
+    <Content Include="G15TK.aspx" />
+    <Content Include="G17SI.aspx" />
+    <Content Include="G17TI.aspx" />
+    <Content Include="G18SI.aspx" />
+    <Content Include="G18TI.aspx" />
+    <Content Include="G19SI.aspx" />
+    <Content Include="G19TI.aspx" />
+    <Content Include="G20SI.aspx" />
+    <Content Include="G20TI.aspx" />
+    <Content Include="Gambar\banner.png" />
+    <Content Include="Gambar\bg list diskusi.png" />
+    <Content Include="Gambar\bg list diskusi2.png" />
+    <Content Include="Gambar\buatdiskusi.png" />
+    <Content Include="Gambar\buatdiskusi2.png" />
+    <Content Include="Gambar\edukasi.png" />
+    <Content Include="Gambar\Fakultas Ilmu Komputer TI.jpg" />
+    <Content Include="Gambar\G15 TI.jpg" />
+    <Content Include="Gambar\G16 TI.jpg" />
+    <Content Include="Gambar\G17 TI.jpg" />
+    <Content Include="Gambar\G18 TI.jpg" />
+    <Content Include="Gambar\G19 TI.jpg" />
+    <Content Include="Gambar\G20 TI.jpg" />
+    <Content Include="Gambar\olahraga.png" />
+    <Content Include="Gambar\panitia.png" />
+    <Content Include="Gambar\Prodi TI.jpg" />
+    <Content Include="Gambar\Screenshot_1.png" />
+    <Content Include="Gambar\ti.png" />
+    <Content Include="Gambar\web.png" />
+    <Content Include="Gambar\web2.png" />
+    <Content Include="HalamanAwal_G15SI.aspx" />
+    <Content Include="Home.aspx" />
+    <Content Include="Home_14SI.aspx" />
+    <Content Include="Home_14TI.aspx" />
+    <Content Include="Home_15AK.aspx" />
+    <Content Include="Home_15SI.aspx" />
+    <Content Include="Home_17SI.aspx" />
+    <Content Include="Home_17TI.aspx" />
+    <Content Include="Home_18SI.aspx" />
+    <Content Include="Home_18TI.aspx" />
+    <Content Include="Home_19SI.aspx" />
+    <Content Include="Home_19TI.aspx" />
+    <Content Include="Home_20SI.aspx" />
+    <Content Include="Home_20TI.aspx" />
+    <Content Include="Home_Faku17SI.aspx" />
+    <Content Include="Home_Faku17TI.aspx" />
+    <Content Include="Home_Faku18SI.aspx" />
+    <Content Include="Home_Faku18TI.aspx" />
+    <Content Include="Home_Faku19SI.aspx" />
+    <Content Include="Home_Faku19TI.aspx" />
+    <Content Include="Home_Faku20SI.aspx" />
+    <Content Include="Home_Faku20TI.aspx" />
+    <Content Include="Home_G14SI.aspx" />
+    <Content Include="Home_G14TI.aspx" />
+    <Content Include="Home_G15TI.aspx" />
+    <Content Include="Home_G15SI.aspx" />
+    <Content Include="Home_G17SI.aspx" />
+    <Content Include="Home_G17TI.aspx" />
+    <Content Include="Home_G18SI.aspx" />
+    <Content Include="Home_G18TI.aspx" />
+    <Content Include="Home_G19SI.aspx" />
+    <Content Include="Home_G19TI.aspx" />
+    <Content Include="Home_G20SI.aspx" />
+    <Content Include="Home_G20TI.aspx" />
+    <Content Include="Index.aspx" />
+    <Content Include="JAVASCRIPT\JScript1.js" />
+    <Content Include="Klasifikasi_G15SI.aspx" />
+    <Content Include="Own_A17TI.aspx" />
+    <Content Include="tokenization.aspx" />
+    <Content Include="Umum.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="15SI.aspx.cs">
+      <DependentUpon>15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="15SI.aspx.designer.cs">
+      <DependentUpon>15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_teknologi.aspx.cs">
+      <DependentUpon>admin_teknologi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_teknologi.aspx.designer.cs">
+      <DependentUpon>admin_teknologi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_politik.aspx.cs">
+      <DependentUpon>admin_politik.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_politik.aspx.designer.cs">
+      <DependentUpon>admin_politik.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_edukasi.aspx.cs">
+      <DependentUpon>admin_edukasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_edukasi.aspx.designer.cs">
+      <DependentUpon>admin_edukasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_game.aspx.cs">
+      <DependentUpon>admin_game.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_game.aspx.designer.cs">
+      <DependentUpon>admin_game.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin_olahraga.aspx.cs">
+      <DependentUpon>admin_olahraga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin_olahraga.aspx.designer.cs">
+      <DependentUpon>admin_olahraga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Beranda_A17TI.aspx.cs">
+      <DependentUpon>Beranda_A17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Beranda_A17TI.aspx.designer.cs">
+      <DependentUpon>Beranda_A17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BuatDiskusi_A17TI.aspx.cs">
+      <DependentUpon>BuatDiskusi_A17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BuatDiskusi_A17TI.aspx.designer.cs">
+      <DependentUpon>BuatDiskusi_A17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_14SI.aspx.cs">
+      <DependentUpon>Comment_14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_14SI.aspx.designer.cs">
+      <DependentUpon>Comment_14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_14TI.aspx.cs">
+      <DependentUpon>Comment_14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_14TI.aspx.designer.cs">
+      <DependentUpon>Comment_14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_16TM.aspx.cs">
+      <DependentUpon>Comment_16TM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_16TM.aspx.designer.cs">
+      <DependentUpon>Comment_16TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_17SI.aspx.cs">
+      <DependentUpon>Comment_17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_17SI.aspx.designer.cs">
+      <DependentUpon>Comment_17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_17TI.aspx.cs">
+      <DependentUpon>Comment_17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_17TI.aspx.designer.cs">
+      <DependentUpon>Comment_17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_18SI.aspx.cs">
+      <DependentUpon>Comment_18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_18SI.aspx.designer.cs">
+      <DependentUpon>Comment_18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_18TI.aspx.cs">
+      <DependentUpon>Comment_18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_18TI.aspx.designer.cs">
+      <DependentUpon>Comment_18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_19SI.aspx.cs">
+      <DependentUpon>Comment_19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_19SI.aspx.designer.cs">
+      <DependentUpon>Comment_19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_19TI.aspx.cs">
+      <DependentUpon>Comment_19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_19TI.aspx.designer.cs">
+      <DependentUpon>Comment_19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_20SI.aspx.cs">
+      <DependentUpon>Comment_20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_20SI.aspx.designer.cs">
+      <DependentUpon>Comment_20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_20TI.aspx.cs">
+      <DependentUpon>Comment_20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_20TI.aspx.designer.cs">
+      <DependentUpon>Comment_20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_AK.aspx.cs">
+      <DependentUpon>Comment_AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_AK.aspx.designer.cs">
+      <DependentUpon>Comment_AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku17SI.aspx.cs">
+      <DependentUpon>Comment_Faku17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku17SI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku17TI.aspx.cs">
+      <DependentUpon>Comment_Faku17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku17TI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku18SI.aspx.cs">
+      <DependentUpon>Comment_Faku18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku18SI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku18TI.aspx.cs">
+      <DependentUpon>Comment_Faku18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku18TI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku19SI.aspx.cs">
+      <DependentUpon>Comment_Faku19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku19SI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku19TI.aspx.cs">
+      <DependentUpon>Comment_Faku19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku19TI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku20SI.aspx.cs">
+      <DependentUpon>Comment_Faku20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku20SI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Faku20TI.aspx.cs">
+      <DependentUpon>Comment_Faku20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Faku20TI.aspx.designer.cs">
+      <DependentUpon>Comment_Faku20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comment_g14.aspx.cs">
+      <DependentUpon>comment_g14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment_g14.aspx.designer.cs">
+      <DependentUpon>comment_g14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g14si.aspx.cs">
+      <DependentUpon>Comment_g14si.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g14si.aspx.designer.cs">
+      <DependentUpon>Comment_g14si.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g14ti.aspx.cs">
+      <DependentUpon>Comment_g14ti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g14ti.aspx.designer.cs">
+      <DependentUpon>Comment_g14ti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g15ak.aspx.cs">
+      <DependentUpon>Comment_g15ak.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g15ak.aspx.designer.cs">
+      <DependentUpon>Comment_g15ak.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g15si.aspx.cs">
+      <DependentUpon>Comment_g15si.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g15si.aspx.designer.cs">
+      <DependentUpon>Comment_g15si.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g15tet.aspx.cs">
+      <DependentUpon>Comment_g15tet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g15tet.aspx.designer.cs">
+      <DependentUpon>Comment_g15tet.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g15ti.aspx.cs">
+      <DependentUpon>Comment_g15ti.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g15ti.aspx.designer.cs">
+      <DependentUpon>Comment_g15ti.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="comment_g15tk.aspx.cs">
+      <DependentUpon>comment_g15tk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="comment_g15tk.aspx.designer.cs">
+      <DependentUpon>comment_g15tk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g15tt.aspx.cs">
+      <DependentUpon>Comment_g15tt.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g15tt.aspx.designer.cs">
+      <DependentUpon>Comment_g15tt.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_g16tm.aspx.cs">
+      <DependentUpon>Comment_g16tm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_g16tm.aspx.designer.cs">
+      <DependentUpon>Comment_g16tm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G17SI.aspx.cs">
+      <DependentUpon>Comment_G17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G17SI.aspx.designer.cs">
+      <DependentUpon>Comment_G17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G17TI.aspx.cs">
+      <DependentUpon>Comment_G17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G17TI.aspx.designer.cs">
+      <DependentUpon>Comment_G17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G18SI.aspx.cs">
+      <DependentUpon>Comment_G18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G18SI.aspx.designer.cs">
+      <DependentUpon>Comment_G18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G18TI.aspx.cs">
+      <DependentUpon>Comment_G18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G18TI.aspx.designer.cs">
+      <DependentUpon>Comment_G18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G19SI.aspx.cs">
+      <DependentUpon>Comment_G19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G19SI.aspx.designer.cs">
+      <DependentUpon>Comment_G19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G19TI.aspx.cs">
+      <DependentUpon>Comment_G19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G19TI.aspx.designer.cs">
+      <DependentUpon>Comment_G19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G20SI.aspx.cs">
+      <DependentUpon>Comment_G20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G20SI.aspx.designer.cs">
+      <DependentUpon>Comment_G20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_G20TI.aspx.cs">
+      <DependentUpon>Comment_G20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_G20TI.aspx.designer.cs">
+      <DependentUpon>Comment_G20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_SI.aspx.cs">
+      <DependentUpon>Comment_SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_SI.aspx.designer.cs">
+      <DependentUpon>Comment_SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_TET.aspx.cs">
+      <DependentUpon>Comment_TET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_TET.aspx.designer.cs">
+      <DependentUpon>Comment_TET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_TI.aspx.cs">
+      <DependentUpon>Comment_TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_TI.aspx.designer.cs">
+      <DependentUpon>Comment_TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_TK.aspx.cs">
+      <DependentUpon>Comment_TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_TK.aspx.designer.cs">
+      <DependentUpon>Comment_TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_TT.aspx.cs">
+      <DependentUpon>Comment_TT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_TT.aspx.designer.cs">
+      <DependentUpon>Comment_TT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_14SI.aspx.cs">
+      <DependentUpon>Comment_Umum_14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_14SI.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_14TI.aspx.cs">
+      <DependentUpon>Comment_Umum_14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_14TI.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15AK.aspx.cs">
+      <DependentUpon>Comment_Umum_15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15AK.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15SI.aspx.cs">
+      <DependentUpon>Comment_Umum_15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15SI.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15TET.aspx.cs">
+      <DependentUpon>Comment_Umum_15TET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15TET.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15TET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15TI.aspx.cs">
+      <DependentUpon>Comment_Umum_15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15TI.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15TK.aspx.cs">
+      <DependentUpon>Comment_Umum_15TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15TK.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_15TT.aspx.cs">
+      <DependentUpon>Comment_Umum_15TT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_15TT.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_15TT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Comment_Umum_16TM.aspx.cs">
+      <DependentUpon>Comment_Umum_16TM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Comment_Umum_16TM.aspx.designer.cs">
+      <DependentUpon>Comment_Umum_16TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ct.aspx.cs">
+      <DependentUpon>ct.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ct.aspx.designer.cs">
+      <DependentUpon>ct.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_14AK.aspx.cs">
+      <DependentUpon>Dashboard_14AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_14AK.aspx.designer.cs">
+      <DependentUpon>Dashboard_14AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_14SI.aspx.cs">
+      <DependentUpon>Dashboard_14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_14SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_14TI.aspx.cs">
+      <DependentUpon>Dashboard_14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_14TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_14TM.aspx.cs">
+      <DependentUpon>Dashboard_14TM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_14TM.aspx.designer.cs">
+      <DependentUpon>Dashboard_14TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_15SI.aspx.cs">
+      <DependentUpon>Dashboard_15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_15SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_15TE.aspx.cs">
+      <DependentUpon>Dashboard_15TE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_15TE.aspx.designer.cs">
+      <DependentUpon>Dashboard_15TE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_15TI.aspx.cs">
+      <DependentUpon>Dashboard_15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_15TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_17SI.aspx.cs">
+      <DependentUpon>Dashboard_17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_17SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_17TI.aspx.cs">
+      <DependentUpon>Dashboard_17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_17TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_18SI.aspx.cs">
+      <DependentUpon>Dashboard_18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_18SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_18TI.aspx.cs">
+      <DependentUpon>Dashboard_18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_18TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_19SI.aspx.cs">
+      <DependentUpon>Dashboard_19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_19SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_19TI.aspx.cs">
+      <DependentUpon>Dashboard_19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_19TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_20SI.aspx.cs">
+      <DependentUpon>Dashboard_20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_20SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_20TI.aspx.cs">
+      <DependentUpon>Dashboard_20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_20TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku17SI.aspx.cs">
+      <DependentUpon>Dashboard_Faku17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku17SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku17TI.aspx.cs">
+      <DependentUpon>Dashboard_Faku17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku17TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku18SI.aspx.cs">
+      <DependentUpon>Dashboard_Faku18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku18SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku18TI.aspx.cs">
+      <DependentUpon>Dashboard_Faku18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku18TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku19SI.aspx.cs">
+      <DependentUpon>Dashboard_Faku19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku19SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku19TI.aspx.cs">
+      <DependentUpon>Dashboard_Faku19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku19TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku20SI.aspx.cs">
+      <DependentUpon>Dashboard_Faku20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku20SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_Faku20TI.aspx.cs">
+      <DependentUpon>Dashboard_Faku20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_Faku20TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_Faku20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G14.aspx.cs">
+      <DependentUpon>Dashboard_G14.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G14.aspx.designer.cs">
+      <DependentUpon>Dashboard_G14.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G14SI.aspx.cs">
+      <DependentUpon>Dashboard_G14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G14SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G14TI.aspx.cs">
+      <DependentUpon>Dashboard_G14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G14TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G15AK.aspx.cs">
+      <DependentUpon>Dashboard_G15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G15AK.aspx.designer.cs">
+      <DependentUpon>Dashboard_G15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G15TI.aspx.cs">
+      <DependentUpon>Dashboard_G15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G15TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G15SI.aspx.cs">
+      <DependentUpon>Dashboard_G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G15SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G15TK.aspx.cs">
+      <DependentUpon>Dashboard_G15TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G15TK.aspx.designer.cs">
+      <DependentUpon>Dashboard_G15TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G17SI.aspx.cs">
+      <DependentUpon>Dashboard_G17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G17SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G17TI.aspx.cs">
+      <DependentUpon>Dashboard_G17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G17TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G18SI.aspx.cs">
+      <DependentUpon>Dashboard_G18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G18SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G18TI.aspx.cs">
+      <DependentUpon>Dashboard_G18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G18TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G19SI.aspx.cs">
+      <DependentUpon>Dashboard_G19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G19SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G19TI.aspx.cs">
+      <DependentUpon>Dashboard_G19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G19TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G20SI.aspx.cs">
+      <DependentUpon>Dashboard_G20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G20SI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Dashboard_G20TI.aspx.cs">
+      <DependentUpon>Dashboard_G20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard_G20TI.aspx.designer.cs">
+      <DependentUpon>Dashboard_G20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_14SI.aspx.cs">
+      <DependentUpon>Default_14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_14SI.aspx.designer.cs">
+      <DependentUpon>Default_14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_14TI.aspx.cs">
+      <DependentUpon>Default_14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_14TI.aspx.designer.cs">
+      <DependentUpon>Default_14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15AK.aspx.cs">
+      <DependentUpon>Default_15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15AK.aspx.designer.cs">
+      <DependentUpon>Default_15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15SI.aspx.cs">
+      <DependentUpon>Default_15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15SI.aspx.designer.cs">
+      <DependentUpon>Default_15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TE.aspx.cs">
+      <DependentUpon>Default_15TE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TE.aspx.designer.cs">
+      <DependentUpon>Default_15TE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TET.aspx.cs">
+      <DependentUpon>Default_15TET.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TET.aspx.designer.cs">
+      <DependentUpon>Default_15TET.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TI.aspx.cs">
+      <DependentUpon>Default_15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TI.aspx.designer.cs">
+      <DependentUpon>Default_15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TK.aspx.cs">
+      <DependentUpon>Default_15TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TK.aspx.designer.cs">
+      <DependentUpon>Default_15TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TM.aspx.cs">
+      <DependentUpon>Default_15TM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TM.aspx.designer.cs">
+      <DependentUpon>Default_15TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_15TT.aspx.cs">
+      <DependentUpon>Default_15TT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_15TT.aspx.designer.cs">
+      <DependentUpon>Default_15TT.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_16TM.aspx.cs">
+      <DependentUpon>Default_16TM.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_16TM.aspx.designer.cs">
+      <DependentUpon>Default_16TM.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_17SI.aspx.cs">
+      <DependentUpon>Default_17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_17SI.aspx.designer.cs">
+      <DependentUpon>Default_17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_17TI.aspx.cs">
+      <DependentUpon>Default_17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_17TI.aspx.designer.cs">
+      <DependentUpon>Default_17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_18SI.aspx.cs">
+      <DependentUpon>Default_18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_18SI.aspx.designer.cs">
+      <DependentUpon>Default_18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_18TI.aspx.cs">
+      <DependentUpon>Default_18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_18TI.aspx.designer.cs">
+      <DependentUpon>Default_18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_19SI.aspx.cs">
+      <DependentUpon>Default_19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_19SI.aspx.designer.cs">
+      <DependentUpon>Default_19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_19TI.aspx.cs">
+      <DependentUpon>Default_19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_19TI.aspx.designer.cs">
+      <DependentUpon>Default_19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_20SI.aspx.cs">
+      <DependentUpon>Default_20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_20SI.aspx.designer.cs">
+      <DependentUpon>Default_20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_20TI.aspx.cs">
+      <DependentUpon>Default_20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_20TI.aspx.designer.cs">
+      <DependentUpon>Default_20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku17SI.aspx.cs">
+      <DependentUpon>Default_Faku17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku17SI.aspx.designer.cs">
+      <DependentUpon>Default_Faku17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku17TI.aspx.cs">
+      <DependentUpon>Default_Faku17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku17TI.aspx.designer.cs">
+      <DependentUpon>Default_Faku17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku18SI.aspx.cs">
+      <DependentUpon>Default_Faku18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku18SI.aspx.designer.cs">
+      <DependentUpon>Default_Faku18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku18TI.aspx.cs">
+      <DependentUpon>Default_Faku18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku18TI.aspx.designer.cs">
+      <DependentUpon>Default_Faku18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku19SI.aspx.cs">
+      <DependentUpon>Default_Faku19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku19SI.aspx.designer.cs">
+      <DependentUpon>Default_Faku19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku19TI.aspx.cs">
+      <DependentUpon>Default_Faku19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku19TI.aspx.designer.cs">
+      <DependentUpon>Default_Faku19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku20SI.aspx.cs">
+      <DependentUpon>Default_Faku20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku20SI.aspx.designer.cs">
+      <DependentUpon>Default_Faku20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_Faku20TI.aspx.cs">
+      <DependentUpon>Default_Faku20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_Faku20TI.aspx.designer.cs">
+      <DependentUpon>Default_Faku20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G14SI.aspx.cs">
+      <DependentUpon>Default_G14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G14SI.aspx.designer.cs">
+      <DependentUpon>Default_G14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G14TI.aspx.cs">
+      <DependentUpon>Default_G14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G14TI.aspx.designer.cs">
+      <DependentUpon>Default_G14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G15AK.aspx.cs">
+      <DependentUpon>Default_G15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G15AK.aspx.designer.cs">
+      <DependentUpon>Default_G15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G15TI.aspx.cs">
+      <DependentUpon>Default_G15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G15TI.aspx.designer.cs">
+      <DependentUpon>Default_G15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G15SI.aspx.cs">
+      <DependentUpon>Default_G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G15SI.aspx.designer.cs">
+      <DependentUpon>Default_G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G15TK.aspx.cs">
+      <DependentUpon>Default_G15TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G15TK.aspx.designer.cs">
+      <DependentUpon>Default_G15TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G17SI.aspx.cs">
+      <DependentUpon>Default_G17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G17SI.aspx.designer.cs">
+      <DependentUpon>Default_G17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G17TI.aspx.cs">
+      <DependentUpon>Default_G17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G17TI.aspx.designer.cs">
+      <DependentUpon>Default_G17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G18SI.aspx.cs">
+      <DependentUpon>Default_G18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G18SI.aspx.designer.cs">
+      <DependentUpon>Default_G18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G18TI.aspx.cs">
+      <DependentUpon>Default_G18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G18TI.aspx.designer.cs">
+      <DependentUpon>Default_G18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G19SI.aspx.cs">
+      <DependentUpon>Default_G19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G19SI.aspx.designer.cs">
+      <DependentUpon>Default_G19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G19TI.aspx.cs">
+      <DependentUpon>Default_G19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G19TI.aspx.designer.cs">
+      <DependentUpon>Default_G19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G20SI.aspx.cs">
+      <DependentUpon>Default_G20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G20SI.aspx.designer.cs">
+      <DependentUpon>Default_G20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default_G20TI.aspx.cs">
+      <DependentUpon>Default_G20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default_G20TI.aspx.designer.cs">
+      <DependentUpon>Default_G20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forumLogin.aspx.cs">
+      <DependentUpon>forumLogin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forumLogin.aspx.designer.cs">
+      <DependentUpon>forumLogin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="forumRegistration.aspx.cs">
+      <DependentUpon>forumRegistration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="forumRegistration.aspx.designer.cs">
+      <DependentUpon>forumRegistration.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G14SI.aspx.cs">
+      <DependentUpon>G14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G14SI.aspx.designer.cs">
+      <DependentUpon>G14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G14TI.aspx.cs">
+      <DependentUpon>G14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G14TI.aspx.designer.cs">
+      <DependentUpon>G14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15.aspx.cs">
+      <DependentUpon>G15.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15.aspx.designer.cs">
+      <DependentUpon>G15.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15AK.aspx.cs">
+      <DependentUpon>G15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15AK.aspx.designer.cs">
+      <DependentUpon>G15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI.aspx.cs">
+      <DependentUpon>G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI.aspx.designer.cs">
+      <DependentUpon>G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiBeritaKehilangan.aspx.cs">
+      <DependentUpon>G15SI_KlasifikasiBeritaKehilangan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiBeritaKehilangan.aspx.designer.cs">
+      <DependentUpon>G15SI_KlasifikasiBeritaKehilangan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiBisnis.aspx.cs">
+      <DependentUpon>G15SI_KlasifikasiBisnis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiBisnis.aspx.designer.cs">
+      <DependentUpon>G15SI_KlasifikasiBisnis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiEdukasi.aspx.cs">
+      <DependentUpon>G15SI_KlasifikasiEdukasi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiEdukasi.aspx.designer.cs">
+      <DependentUpon>G15SI_KlasifikasiEdukasi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiKepanitiaan.aspx.cs">
+      <DependentUpon>G15SI_KlasifikasiKepanitiaan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiKepanitiaan.aspx.designer.cs">
+      <DependentUpon>G15SI_KlasifikasiKepanitiaan.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiOlahraga.aspx.cs">
+      <DependentUpon>G15SI_KlasifikasiOlahraga.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15SI_KlasifikasiOlahraga.aspx.designer.cs">
+      <DependentUpon>G15SI_KlasifikasiOlahraga.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15TI.aspx.cs">
+      <DependentUpon>G15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15TI.aspx.designer.cs">
+      <DependentUpon>G15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G15TK.aspx.cs">
+      <DependentUpon>G15TK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G15TK.aspx.designer.cs">
+      <DependentUpon>G15TK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G17SI.aspx.cs">
+      <DependentUpon>G17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G17SI.aspx.designer.cs">
+      <DependentUpon>G17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G17TI.aspx.cs">
+      <DependentUpon>G17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G17TI.aspx.designer.cs">
+      <DependentUpon>G17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G18SI.aspx.cs">
+      <DependentUpon>G18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G18SI.aspx.designer.cs">
+      <DependentUpon>G18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G18TI.aspx.cs">
+      <DependentUpon>G18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G18TI.aspx.designer.cs">
+      <DependentUpon>G18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G19SI.aspx.cs">
+      <DependentUpon>G19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G19SI.aspx.designer.cs">
+      <DependentUpon>G19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G19TI.aspx.cs">
+      <DependentUpon>G19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G19TI.aspx.designer.cs">
+      <DependentUpon>G19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G20SI.aspx.cs">
+      <DependentUpon>G20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G20SI.aspx.designer.cs">
+      <DependentUpon>G20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="G20TI.aspx.cs">
+      <DependentUpon>G20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="G20TI.aspx.designer.cs">
+      <DependentUpon>G20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HalamanAwal_G15SI.aspx.cs">
+      <DependentUpon>HalamanAwal_G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HalamanAwal_G15SI.aspx.designer.cs">
+      <DependentUpon>HalamanAwal_G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_14SI.aspx.cs">
+      <DependentUpon>Home_14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_14SI.aspx.designer.cs">
+      <DependentUpon>Home_14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_14TI.aspx.cs">
+      <DependentUpon>Home_14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_14TI.aspx.designer.cs">
+      <DependentUpon>Home_14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_15AK.aspx.cs">
+      <DependentUpon>Home_15AK.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_15AK.aspx.designer.cs">
+      <DependentUpon>Home_15AK.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_15SI.aspx.cs">
+      <DependentUpon>Home_15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_15SI.aspx.designer.cs">
+      <DependentUpon>Home_15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_17SI.aspx.cs">
+      <DependentUpon>Home_17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_17SI.aspx.designer.cs">
+      <DependentUpon>Home_17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_17TI.aspx.cs">
+      <DependentUpon>Home_17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_17TI.aspx.designer.cs">
+      <DependentUpon>Home_17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_18SI.aspx.cs">
+      <DependentUpon>Home_18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_18SI.aspx.designer.cs">
+      <DependentUpon>Home_18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_18TI.aspx.cs">
+      <DependentUpon>Home_18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_18TI.aspx.designer.cs">
+      <DependentUpon>Home_18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_19SI.aspx.cs">
+      <DependentUpon>Home_19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_19SI.aspx.designer.cs">
+      <DependentUpon>Home_19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_19TI.aspx.cs">
+      <DependentUpon>Home_19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_19TI.aspx.designer.cs">
+      <DependentUpon>Home_19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_20SI.aspx.cs">
+      <DependentUpon>Home_20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_20SI.aspx.designer.cs">
+      <DependentUpon>Home_20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_20TI.aspx.cs">
+      <DependentUpon>Home_20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_20TI.aspx.designer.cs">
+      <DependentUpon>Home_20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku17SI.aspx.cs">
+      <DependentUpon>Home_Faku17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku17SI.aspx.designer.cs">
+      <DependentUpon>Home_Faku17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku17TI.aspx.cs">
+      <DependentUpon>Home_Faku17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku17TI.aspx.designer.cs">
+      <DependentUpon>Home_Faku17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku18SI.aspx.cs">
+      <DependentUpon>Home_Faku18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku18SI.aspx.designer.cs">
+      <DependentUpon>Home_Faku18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku18TI.aspx.cs">
+      <DependentUpon>Home_Faku18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku18TI.aspx.designer.cs">
+      <DependentUpon>Home_Faku18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku19SI.aspx.cs">
+      <DependentUpon>Home_Faku19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku19SI.aspx.designer.cs">
+      <DependentUpon>Home_Faku19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku19TI.aspx.cs">
+      <DependentUpon>Home_Faku19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku19TI.aspx.designer.cs">
+      <DependentUpon>Home_Faku19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku20SI.aspx.cs">
+      <DependentUpon>Home_Faku20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku20SI.aspx.designer.cs">
+      <DependentUpon>Home_Faku20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_Faku20TI.aspx.cs">
+      <DependentUpon>Home_Faku20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_Faku20TI.aspx.designer.cs">
+      <DependentUpon>Home_Faku20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G14SI.aspx.cs">
+      <DependentUpon>Home_G14SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G14SI.aspx.designer.cs">
+      <DependentUpon>Home_G14SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G14TI.aspx.cs">
+      <DependentUpon>Home_G14TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G14TI.aspx.designer.cs">
+      <DependentUpon>Home_G14TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G15TI.aspx.cs">
+      <DependentUpon>Home_G15TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G15TI.aspx.designer.cs">
+      <DependentUpon>Home_G15TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G15SI.aspx.cs">
+      <DependentUpon>Home_G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G15SI.aspx.designer.cs">
+      <DependentUpon>Home_G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G17SI.aspx.cs">
+      <DependentUpon>Home_G17SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G17SI.aspx.designer.cs">
+      <DependentUpon>Home_G17SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G17TI.aspx.cs">
+      <DependentUpon>Home_G17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G17TI.aspx.designer.cs">
+      <DependentUpon>Home_G17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G18SI.aspx.cs">
+      <DependentUpon>Home_G18SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G18SI.aspx.designer.cs">
+      <DependentUpon>Home_G18SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G18TI.aspx.cs">
+      <DependentUpon>Home_G18TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G18TI.aspx.designer.cs">
+      <DependentUpon>Home_G18TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G19SI.aspx.cs">
+      <DependentUpon>Home_G19SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G19SI.aspx.designer.cs">
+      <DependentUpon>Home_G19SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G19TI.aspx.cs">
+      <DependentUpon>Home_G19TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G19TI.aspx.designer.cs">
+      <DependentUpon>Home_G19TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G20SI.aspx.cs">
+      <DependentUpon>Home_G20SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G20SI.aspx.designer.cs">
+      <DependentUpon>Home_G20SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Home_G20TI.aspx.cs">
+      <DependentUpon>Home_G20TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home_G20TI.aspx.designer.cs">
+      <DependentUpon>Home_G20TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Klasifikasi_G15SI.aspx.cs">
+      <DependentUpon>Klasifikasi_G15SI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Klasifikasi_G15SI.aspx.designer.cs">
+      <DependentUpon>Klasifikasi_G15SI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Own_A17TI.aspx.cs">
+      <DependentUpon>Own_A17TI.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Own_A17TI.aspx.designer.cs">
+      <DependentUpon>Own_A17TI.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="tokenization.aspx.cs">
+      <DependentUpon>tokenization.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="tokenization.aspx.designer.cs">
+      <DependentUpon>tokenization.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Umum.aspx.cs">
+      <DependentUpon>Umum.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Umum.aspx.designer.cs">
+      <DependentUpon>Umum.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50815</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
